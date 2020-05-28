@@ -1,11 +1,11 @@
 $(function(){
 
-  $('#send').click(function() {
+  $('.button-direction').click(function() {
 
-    let color = $('#color').val();
+    let direction = $(this).data('direction');
 
-    socket.emit('updateColor', {
-      color: color
+    socket.emit('triggerDirection', {
+      direction: direction
     });
   });
 

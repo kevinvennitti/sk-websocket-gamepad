@@ -1,3 +1,44 @@
-html {
-  
+#page-player {
+  background:#0019CC;
+}
+
+#player {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  width:100px;
+  height:100px;
+  background:#F7CE4C;
+  border-radius:50%;
+}
+
+/* ========== */
+
+#page-admin {
+  background:#EC4E3A;
+}
+
+#gamepad {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  text-align:center;
+}
+
+.button-direction {
+  width:100px;
+  height:100px;
+  background:#0019CC;
+  color:#F7CE4C;
+  border-radius:50%;
+  font-size:50px;
+  border:none;
+  outline:none;
+}
+.button-direction:active {
+  background:white;
 }

@@ -21,14 +21,14 @@ app.get('/admin', function (req, res) {
 io.on('connection', function (socket) {
   socket.emit('news', { hello: 'world' });
 
-  socket.on('updateColor', function (data) {
-    console.log('Le serveur a reçu une nouvelle couleur !');
+  socket.on('triggerDirection', function (data) {
+    console.log('Le serveur a reçu une nouvelle direction !');
     console.log('Données reçues :');
     console.log(data);
 
-    console.log('On transmet cette couleur à toutes les pages connectées');
-    io.sockets.emit('setColor', {
-      color: data.color
+    console.log('On transmet cette direction à toutes les pages connectées');
+    io.sockets.emit('setDirection', {
+      direction: data.direction
     })
   });
 });

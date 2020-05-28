@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>sk-websocket-color</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
     <script src="lib/jquery-3.4.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
@@ -15,12 +16,17 @@
     <script src="js/admin.js"></script>
   </head>
 
-  <body>
+  <body id="page-admin">
 
-    <h1>Admin</h1>
-
-    <input type="color" id="color">
-    <button class="button" id="send">Envoyer la couleur</button>
+    <div id="gamepad">
+      <button class="button-direction" data-direction="top">↑</button>
+      <br>
+      <button class="button-direction" data-direction="left">←</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="button-direction" data-direction="right">→</button>
+      <br>
+      <button class="button-direction" data-direction="down">↓</button>
+    </div>
 
   </body>
 </html>
